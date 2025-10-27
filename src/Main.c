@@ -471,7 +471,7 @@ void PrintBinBranch(BinBranch* b){
 }
 
 void Setup(AlxWindow* w){
-	SetAlxFont(Sprite_Load(AlxFont_PATH_YANIS),16,16,16,16);
+	SetAlxFont(Sprite_Load(ALXFONT_PATH_YANIS),16,16,16,16);
 	ResizeAlxFont(100,100);
 
 	fScaleX = 100;
@@ -489,7 +489,7 @@ void Setup(AlxWindow* w){
 	//MFunction_Push(&Function,3,(int[]){BRANCH_FIRST,BRANCH_FIRST,BRANCH_FIRST},BRANCH_SECOND,ARG_X,3.0f,MFunction_Pow);
 	//MFunction_Push(&Function,3,(int[]){BRANCH_FIRST,BRANCH_FIRST,BRANCH_SECOND},BRANCH_SECOND,ARG_X,2.0f,MFunction_Pow);
 
-	tb = TextBox_New(Input_New(50,1),(Rect){0.0f,0.0f,2300.0f,100.0f},AlxFont_PATH_YANIS,16,16,16,16,50,50,BLACK);
+	tb = TextBox_New(Input_New(50,1),(Rect){0.0f,0.0f,2300.0f,100.0f},ALXFONT_PATH_YANIS,16,16,16,16,50,50,BLACK);
 
 	Functions = Vector_New(sizeof(GFunction));
 }
