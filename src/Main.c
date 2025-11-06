@@ -533,8 +533,8 @@ void Update(AlxWindow* w){
 		}
 	}
 
-	Input_DefaultReact(&tb.In);
-	TextBox_Update(&tb,GetMouse());
+	Input_DefaultReact(&tb.In,NULL);
+	TextBox_Update(&tb,w->Strokes,GetMouse());
 
 	if(Stroke(ALX_KEY_ENTER).PRESSED) {
 		String_RemoveAll(&tb.In.Buffer,'\n');
